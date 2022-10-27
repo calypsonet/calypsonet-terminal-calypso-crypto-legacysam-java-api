@@ -9,21 +9,21 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso.sam.legacy;
+package org.calypsonet.terminal.calypso.crypto.legacysam;
 
 /**
  * API properties.
  *
- * @since 1.0.0
+ * @since 0.1.0
  */
 public class LegacySamApiProperties {
 
   /**
    * API version: {@value}
    *
-   * @since 1.0.0
+   * @since 0.1.0
    */
-  public static final String VERSION = "1.0";
+  public static final String VERSION = "0.1";
 
   /** Private constructor */
   private LegacySamApiProperties() {}

@@ -9,7 +9,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso.sam.legacy;
+package org.calypsonet.terminal.calypso.crypto.legacysam;
 
 import java.util.List;
 import org.calypsonet.terminal.calypso.transaction.SamTransactionManager;
@@ -17,9 +17,9 @@ import org.calypsonet.terminal.calypso.transaction.SamTransactionManager;
 /**
  * Service providing the high-level API to manage transactions with a Calypso legacy SAM.
  *
- * <p>The target {@link LegacySam} object provided to the build is kept and updated at each step
- * of using the service. It is the main container of the data handled during the transaction and
- * acts as a SAM image.
+ * <p>The target {@link LegacySam} object provided to the build is kept and updated at each step of
+ * using the service. It is the main container of the data handled during the transaction and acts
+ * as a SAM image.
  *
  * <p>There are two main steps in using the methods of this service:
  *
@@ -34,7 +34,7 @@ import org.calypsonet.terminal.calypso.transaction.SamTransactionManager;
  *
  * <p>Technical or data errors, security conditions, etc. are reported as exceptions.
  *
- * @since 1.0.0
+ * @since 0.1.0
  */
 public interface LegacySamTransactionManager extends SamTransactionManager {
 
@@ -46,7 +46,7 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
    * @param eventCounterNumber The number of the event counter to read (in range [0..26]).
    * @return The current instance.
    * @throws IllegalArgumentException If the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareReadEventCounter(int eventCounterNumber);
 
@@ -60,7 +60,7 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
    * @param toEventCounterNumber The number of the last event counter to read (in range [0..26]).
    * @return The current instance.
    * @throws IllegalArgumentException If one of the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareReadEventCounters(
       int fromEventCounterNumber, int toEventCounterNumber);
@@ -73,7 +73,7 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
    * @param eventCeilingNumber The number of the event ceiling to read (in range [0..26]).
    * @return The current instance.
    * @throws IllegalArgumentException If the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareReadEventCeiling(int eventCeilingNumber);
 
@@ -87,7 +87,7 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
    * @param toEventCeilingNumber The number of the last event ceiling to read (in range [0..26]).
    * @return The current instance.
    * @throws IllegalArgumentException If one of the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareReadEventCeilings(
       int fromEventCeilingNumber, int toEventCeilingNumber);
@@ -95,15 +95,14 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
   /**
    * Schedules the execution of a <b>Write Ceilings</b> command to write a single event ceiling.
    *
-   * <p>Once this command is processed, the ceiling value available in {@link LegacySam} is
-   * updated.
+   * <p>Once this command is processed, the ceiling value available in {@link LegacySam} is updated.
    *
    * @param eventCeilingNumber The number of the event ceiling to write.
    * @param newValue The desired value for the event ceiling (defined as a positive int {@code <=}
    *     16777215 [FFFFFFh]).
    * @return The current instance.
    * @throws IllegalArgumentException If the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareWriteEventCeiling(int eventCeilingNumber, int newValue);
 
@@ -118,7 +117,7 @@ public interface LegacySamTransactionManager extends SamTransactionManager {
    *     (each event ceiling value is defined as a positive int {@code <=} 16777215 [FFFFFFh]).
    * @return The current instance.
    * @throws IllegalArgumentException If one of the provided argument is out of range.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   LegacySamTransactionManager prepareWriteEventCeilings(
       int fromEventCeilingNumber, List<Integer> newValues);

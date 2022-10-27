@@ -1,1 +1,1 @@
-rootProject.name = "calypsonet-terminal-calypso-sam-legacy-java-api"
+rootProject.name = "calypsonet-terminal-calypso-crypto-legacysam-java-api"

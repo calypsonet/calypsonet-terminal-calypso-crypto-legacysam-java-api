@@ -9,14 +9,13 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso;
+package org.calypsonet.terminal.calypso.crypto.legacysam;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
-import org.calypsonet.terminal.calypso.sam.legacy.LegacySamApiProperties;
 import org.junit.BeforeClass;
 import org.junit.Test;
 

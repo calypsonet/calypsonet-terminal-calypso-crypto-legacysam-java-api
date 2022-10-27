@@ -9,7 +9,7 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso.sam.legacy;
+package org.calypsonet.terminal.calypso.crypto.legacysam;
 
 import java.util.SortedMap;
 import org.calypsonet.terminal.calypso.sam.CalypsoSam;
@@ -17,7 +17,7 @@ import org.calypsonet.terminal.calypso.sam.CalypsoSam;
 /**
  * A static and partial view of the legacy SAM's content.
  *
- * @since 1.0.0
+ * @since 0.1.0
  */
 public interface LegacySam extends CalypsoSam {
 
@@ -26,7 +26,7 @@ public interface LegacySam extends CalypsoSam {
    *
    * @param eventCounterNumber The number of the event counter (in range [0..26]).
    * @return null if the event counter value is not set.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   Integer getEventCounter(int eventCounterNumber);
 
@@ -35,7 +35,7 @@ public interface LegacySam extends CalypsoSam {
    * number and {@code value} is the counter value.
    *
    * @return a not null map.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   SortedMap<Integer, Integer> getEventCounters();
 
@@ -44,7 +44,7 @@ public interface LegacySam extends CalypsoSam {
    *
    * @param eventCeilingNumber The number of the event ceiling (in range [0..26]).
    * @return null if the event ceiling value is not set.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   Integer getEventCeiling(int eventCeilingNumber);
 
@@ -53,7 +53,7 @@ public interface LegacySam extends CalypsoSam {
    * number and {@code value} is the ceiling value.
    *
    * @return a not null map.
-   * @since 1.0.0
+   * @since 0.1.0
    */
   SortedMap<Integer, Integer> getEventCeilings();
 }

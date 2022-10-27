@@ -10,4 +10,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `prepareReadEventCeiling`, `prepareReadEventCeilings` methods to `LegacySamTransactionManager` and `getEventCeiling`, `getEventCeilings` methods to `LegacySam` API (issue [#26])
 - `prepareReadEventCounter`, `prepareReadEventCounters` methods to `LegacySamTransactionManager` and `getEventCounter`, `getEventCounters` methods to `LegacySam` API (issue [#27])
 
-[unreleased]: https://github.com/calypsonet/calypsonet-terminal-calypso-sam-legacy-java-api/releases/tag/1.0.0
+[unreleased]: https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api/releases/tag/0.1.0
