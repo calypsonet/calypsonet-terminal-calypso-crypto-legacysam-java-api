@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.calypsonet.terminal.calypso.crypto.legacysam","l":"LegacySam"},{"p":"org.calypsonet.terminal.calypso.crypto.legacysam","l":"LegacySamApiProperties"},{"p":"org.calypsonet.terminal.calypso.crypto.legacysam","l":"LegacySamTransactionManager"}]
