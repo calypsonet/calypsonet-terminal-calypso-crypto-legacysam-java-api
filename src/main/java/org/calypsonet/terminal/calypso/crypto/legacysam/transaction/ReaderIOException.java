@@ -9,22 +9,31 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso.crypto.legacysam;
+package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
- * API properties.
+ * Indicates a communication error with the reader of the card or SAM.
  *
  * @since 0.1.0
  */
-public class LegacySamApiProperties {
+public class ReaderIOException extends RuntimeException {
 
   /**
-   * API version: {@value}
-   *
+   * @param message The message to identify the exception context.
    * @since 0.1.0
    */
-  public static final String VERSION = "0.1";
+  public ReaderIOException(String message) {
+    super(message);
+  }
 
-  /** Private constructor */
-  private LegacySamApiProperties() {}
+  /**
+   * Encapsulates a lower level exception.
+   *
+   * @param message Message to identify the exception context.
+   * @param cause The cause.
+   * @since 0.1.0
+   */
+  public ReaderIOException(String message, Throwable cause) {
+    super(message, cause);
+  }
 }

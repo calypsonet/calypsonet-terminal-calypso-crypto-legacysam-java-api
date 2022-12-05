@@ -1,5 +1,5 @@
 /* **************************************************************************************
- * Copyright (c) 2022 Calypso Networks Association https://calypsonet.org/
+ * Copyright (c) 2020 Calypso Networks Association https://calypsonet.org/
  *
  * See the NOTICE file(s) distributed with this work for additional information
  * regarding copyright ownership.
@@ -9,22 +9,20 @@
  *
  * SPDX-License-Identifier: EPL-2.0
  ************************************************************************************** */
-package org.calypsonet.terminal.calypso.crypto.legacysam;
+package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
- * API properties.
+ * Indicates that the SAM is revoked.
  *
  * @since 0.1.0
  */
-public class LegacySamApiProperties {
+public class SamRevokedException extends RuntimeException {
 
   /**
-   * API version: {@value}
-   *
+   * @param message The message to identify the exception context.
    * @since 0.1.0
    */
-  public static final String VERSION = "0.1";
-
-  /** Private constructor */
-  private LegacySamApiProperties() {}
+  public SamRevokedException(String message) {
+    super(message);
+  }
 }
