@@ -97,7 +97,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <h1 class="title">Hierarchy For All Packages</h1>
 <span class="packageHierarchyLabel">Package Hierarchies:</span>
 <ul class="horizontal">
-<li><a href="org/calypsonet/terminal/calypso/crypto/legacysam/package-tree.html">org.calypsonet.terminal.calypso.crypto.legacysam</a></li>
+<li><a href="org/calypsonet/terminal/calypso/crypto/legacysam/package-tree.html">org.calypsonet.terminal.calypso.crypto.legacysam</a>, </li>
+<li><a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/package-tree.html">org.calypsonet.terminal.calypso.crypto.legacysam.sam</a>, </li>
+<li><a href="org/calypsonet/terminal/calypso/crypto/legacysam/spi/package-tree.html">org.calypsonet.terminal.calypso.crypto.legacysam.spi</a>, </li>
+<li><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/package-tree.html">org.calypsonet.terminal.calypso.crypto.legacysam.transaction</a></li>
 </ul>
 </div>
 <div class="contentContainer">
@@ -107,6 +110,24 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">java.lang.Object
 <ul>
 <li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/LegacySamApiProperties.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam"><span class="typeNameLink">LegacySamApiProperties</span></a></li>
+<li class="circle">java.lang.Throwable (implements java.io.Serializable)
+<ul>
+<li class="circle">java.lang.Exception
+<ul>
+<li class="circle">java.lang.RuntimeException
+<ul>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/InconsistentDataException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">InconsistentDataException</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/InvalidSignatureException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">InvalidSignatureException</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/ReaderIOException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">ReaderIOException</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/SamIOException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">SamIOException</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/SamRevokedException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">SamRevokedException</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/UnexpectedCommandStatusException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">UnexpectedCommandStatusException</span></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -114,20 +135,49 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <section role="region">
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
-<li class="circle">org.calypsonet.terminal.calypso.transaction.CommonTransactionManager&lt;T,&#8203;S&gt;
+<li class="circle">org.calypsonet.terminal.reader.selection.spi.CardSelection
 <ul>
-<li class="circle">org.calypsonet.terminal.calypso.transaction.SamTransactionManager
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.sam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySamSelection.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam"><span class="typeNameLink">LegacySamSelection</span></a></li>
+</ul>
+</li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">CommonSignatureComputationData</span></a>&lt;T&gt;
 <ul>
-<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/LegacySamTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam"><span class="typeNameLink">LegacySamTransactionManager</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/BasicSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">BasicSignatureComputationData</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/TraceableSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">TraceableSignatureComputationData</span></a></li>
+</ul>
+</li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">CommonSignatureVerificationData</span></a>&lt;T&gt;
+<ul>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/BasicSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">BasicSignatureVerificationData</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/TraceableSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">TraceableSignatureVerificationData</span></a></li>
+</ul>
+</li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.spi.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/spi/LegacySamRevocationServiceSpi.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.spi"><span class="typeNameLink">LegacySamRevocationServiceSpi</span></a></li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">LegacySamTransactionManager</span></a>&lt;T&gt;
+<ul>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamReadTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">LegacySamReadTransactionManager</span></a>&lt;T&gt;
+<ul>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">LegacySamFreeTransactionManager</span></a></li>
 </ul>
 </li>
 </ul>
 </li>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.transaction.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManagerFactory.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction"><span class="typeNameLink">LegacySamTransactionManagerFactory</span></a></li>
 <li class="circle">org.calypsonet.terminal.reader.selection.spi.SmartCard
 <ul>
-<li class="circle">org.calypsonet.terminal.calypso.sam.CalypsoSam
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.sam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySam.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam"><span class="typeNameLink">LegacySam</span></a></li>
+</ul>
+</li>
+</ul>
+</section>
+<section role="region">
+<h2 title="Enum Hierarchy">Enum Hierarchy</h2>
 <ul>
-<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/LegacySam.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam"><span class="typeNameLink">LegacySam</span></a></li>
+<li class="circle">java.lang.Object
+<ul>
+<li class="circle">java.lang.Enum&lt;E&gt; (implements java.lang.Comparable&lt;T&gt;, java.io.Serializable)
+<ul>
+<li class="circle">org.calypsonet.terminal.calypso.crypto.legacysam.sam.<a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySam.ProductType.html" title="enum in org.calypsonet.terminal.calypso.crypto.legacysam.sam"><span class="typeNameLink">LegacySam.ProductType</span></a></li>
 </ul>
 </li>
 </ul>

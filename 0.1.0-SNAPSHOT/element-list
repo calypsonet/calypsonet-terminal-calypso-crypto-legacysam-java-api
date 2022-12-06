@@ -1,1 +1,4 @@
 org.calypsonet.terminal.calypso.crypto.legacysam
+org.calypsonet.terminal.calypso.crypto.legacysam.sam
+org.calypsonet.terminal.calypso.crypto.legacysam.spi
+org.calypsonet.terminal.calypso.crypto.legacysam.transaction
