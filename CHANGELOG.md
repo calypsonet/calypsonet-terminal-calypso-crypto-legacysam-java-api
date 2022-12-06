@@ -6,8 +6,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- `prepareWriteEventCeiling`, `prepareWriteEventCeilings` methods to `LegacySamTransactionManager` API (issue [#25])
-- `prepareReadEventCeiling`, `prepareReadEventCeilings` methods to `LegacySamTransactionManager` and `getEventCeiling`, `getEventCeilings` methods to `LegacySam` API (issue [#26])
-- `prepareReadEventCounter`, `prepareReadEventCounters` methods to `LegacySamTransactionManager` and `getEventCounter`, `getEventCounters` methods to `LegacySam` API (issue [#27])
-
-[unreleased]: https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api/releases/tag/0.1.0
+- APIs of the SAM image and SAM selection.
+- APIs related to signature computation and verification as well as counter and ceiling reading.

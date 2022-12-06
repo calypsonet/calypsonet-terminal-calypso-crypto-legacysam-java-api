@@ -1,5 +1,5 @@
 /**
- * Components used in applications to manage Calypso cards.
+ * Components used in applications to manage Calypso Legacy SAMs.
  *
  * @since 0.1.0
  */
