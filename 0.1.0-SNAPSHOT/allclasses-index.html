@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":8,"i5":8,"i6":1,"i7":4,"i8":2,"i9":1,"i10":1,"i11":1,"i12":1,"i13":1,"i14":1,"i15":8,"i16":8,"i17":8,"i18":1,"i19":1,"i20":8};
+var data = {"i0":1,"i1":1,"i2":1,"i3":1,"i4":1,"i5":1,"i6":8,"i7":8,"i8":1,"i9":4,"i10":2,"i11":1,"i12":1,"i13":1,"i14":1,"i15":1,"i16":1,"i17":1,"i18":8,"i19":8,"i20":8,"i21":1,"i22":1,"i23":8};
 var tabs = {65535:["t0","All Classes"],1:["t1","Interface Summary"],2:["t2","Class Summary"],4:["t3","Enum Summary"],8:["t4","Exception Summary"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -126,20 +126,32 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 </th>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/CardSelectionFactory.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam">CardSelectionFactory</a></td>
+<th class="colLast" scope="row">
+<div class="block">Factory of a <a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySamSelection.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam"><code>LegacySamSelection</code></a>, a subtype of <code>CardSelection</code>.</div>
+</th>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommandDataFactory.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">CommandDataFactory</a></td>
+<th class="colLast" scope="row">
+<div class="block">Factory of all complex command in/out data.</div>
+</th>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">CommonSignatureComputationData</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureComputationData.html" title="type parameter in CommonSignatureComputationData">T</a> extends <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">CommonSignatureComputationData</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureComputationData.html" title="type parameter in CommonSignatureComputationData">T</a>&gt;&gt;</td>
 <th class="colLast" scope="row">
 <div class="block">Contains the input/output data of the <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html#prepareComputeSignature(org.calypsonet.terminal.calypso.crypto.legacysam.transaction.CommonSignatureComputationData)"><code>LegacySamFreeTransactionManager.prepareComputeSignature(CommonSignatureComputationData)</code></a> method
  for common signature computation modes.</div>
 </th>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">CommonSignatureVerificationData</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureVerificationData.html" title="type parameter in CommonSignatureVerificationData">T</a> extends <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">CommonSignatureVerificationData</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/CommonSignatureVerificationData.html" title="type parameter in CommonSignatureVerificationData">T</a>&gt;&gt;</td>
 <th class="colLast" scope="row">
 <div class="block">Contains the input/output data of the <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html#prepareVerifySignature(org.calypsonet.terminal.calypso.crypto.legacysam.transaction.CommonSignatureVerificationData)"><code>LegacySamFreeTransactionManager.prepareVerifySignature(CommonSignatureVerificationData)</code></a> method
  for common signature verification modes.</div>
 </th>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/InconsistentDataException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">InconsistentDataException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates the detection of inconsistent data related to one of the following cases:
@@ -148,100 +160,106 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
    A de-synchronization of the APDU exchanges.</div>
 </th>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/InvalidSignatureException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">InvalidSignatureException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates that a signature is incorrect.</div>
 </th>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySam.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam">LegacySam</a></td>
 <th class="colLast" scope="row">
 <div class="block">A static and partial view of the legacy SAM's content.</div>
 </th>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySam.ProductType.html" title="enum in org.calypsonet.terminal.calypso.crypto.legacysam.sam">LegacySam.ProductType</a></td>
 <th class="colLast" scope="row">
 <div class="block">All Calypso SAM products supported by this API.</div>
 </th>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/LegacySamApiProperties.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam">LegacySamApiProperties</a></td>
 <th class="colLast" scope="row">
 <div class="block">API properties.</div>
 </th>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamFreeTransactionManager</a></td>
 <th class="colLast" scope="row">
 <div class="block">Transaction manager dedicated to operations performed without control SAM.</div>
 </th>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeWriteTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamFreeWriteTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeWriteTransactionManager.html" title="type parameter in LegacySamFreeWriteTransactionManager">T</a> extends <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeWriteTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamFreeWriteTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeWriteTransactionManager.html" title="type parameter in LegacySamFreeWriteTransactionManager">T</a>&gt;&gt;</td>
+<th class="colLast" scope="row">
+<div class="block">Transaction manager dedicated to free write operations.</div>
+</th>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamReadTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamReadTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamReadTransactionManager.html" title="type parameter in LegacySamReadTransactionManager">T</a> extends <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamReadTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamReadTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamReadTransactionManager.html" title="type parameter in LegacySamReadTransactionManager">T</a>&gt;&gt;</td>
 <th class="colLast" scope="row">
 <div class="block">Transaction manager dedicated to read operations.</div>
 </th>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/spi/LegacySamRevocationServiceSpi.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.spi">LegacySamRevocationServiceSpi</a></td>
 <th class="colLast" scope="row">
 <div class="block">Service to be implemented in order to check dynamically if a SAM is revoked.</div>
 </th>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/sam/LegacySamSelection.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.sam">LegacySamSelection</a></td>
 <th class="colLast" scope="row">
 <div class="block">SAM specific <code>CardSelection</code> providing means to filter SAM and define optional commands to
  be executed during the selection phase such as the Unlock command.</div>
 </th>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManager.html" title="type parameter in LegacySamTransactionManager">T</a> extends <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManager.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamTransactionManager</a>&lt;<a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManager.html" title="type parameter in LegacySamTransactionManager">T</a>&gt;&gt;</td>
 <th class="colLast" scope="row">
 <div class="block">Common API for all legacy SAM transaction managers.</div>
 </th>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamTransactionManagerFactory.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">LegacySamTransactionManagerFactory</a></td>
 <th class="colLast" scope="row">
 <div class="block">Factory of all SAM transaction managers.</div>
 </th>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/ReaderIOException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">ReaderIOException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates a communication error with the reader of the card or SAM.</div>
 </th>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/SamIOException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">SamIOException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates a communication error with the SAM (e.g.</div>
 </th>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/SamRevokedException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">SamRevokedException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates that the SAM is revoked.</div>
 </th>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/TraceableSignatureComputationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">TraceableSignatureComputationData</a></td>
 <th class="colLast" scope="row">
 <div class="block">Contains the input/output data of the <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html#prepareComputeSignature(org.calypsonet.terminal.calypso.crypto.legacysam.transaction.CommonSignatureComputationData)"><code>LegacySamFreeTransactionManager.prepareComputeSignature(CommonSignatureComputationData)</code></a> method
  for traceable signature computation using the "PSO Compute Signature" SAM command.</div>
 </th>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/TraceableSignatureVerificationData.html" title="interface in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">TraceableSignatureVerificationData</a></td>
 <th class="colLast" scope="row">
 <div class="block">Contains the input/output data of the <a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/LegacySamFreeTransactionManager.html#prepareVerifySignature(org.calypsonet.terminal.calypso.crypto.legacysam.transaction.CommonSignatureVerificationData)"><code>LegacySamFreeTransactionManager.prepareVerifySignature(CommonSignatureVerificationData)</code></a> method
  for traceable signature verification using the "PSO Verify Signature" SAM command.</div>
 </th>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><a href="org/calypsonet/terminal/calypso/crypto/legacysam/transaction/UnexpectedCommandStatusException.html" title="class in org.calypsonet.terminal.calypso.crypto.legacysam.transaction">UnexpectedCommandStatusException</a></td>
 <th class="colLast" scope="row">
 <div class="block">Indicates that an unexpected command status was returned by the card or SAM.</div>
