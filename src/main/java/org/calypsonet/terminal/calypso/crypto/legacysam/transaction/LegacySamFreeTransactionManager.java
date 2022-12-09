@@ -23,7 +23,8 @@ import org.calypsonet.terminal.reader.CardReader;
  * @since 0.1.0
  */
 public interface LegacySamFreeTransactionManager
-    extends LegacySamReadTransactionManager<LegacySamFreeTransactionManager> {
+    extends LegacySamReadTransactionManager<LegacySamFreeTransactionManager>,
+        LegacySamFreeWriteTransactionManager<LegacySamFreeTransactionManager> {
 
   /**
    * Schedules the execution of a "Data Cipher" or "PSO Compute Signature" SAM command.

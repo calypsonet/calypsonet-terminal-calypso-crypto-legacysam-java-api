@@ -11,7 +11,6 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
-import java.util.List;
 import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
 
 /**
@@ -75,32 +74,35 @@ public interface LegacySamReadTransactionManager<T extends LegacySamReadTransact
    */
   T prepareReadEventCeilings(int fromEventCeilingNumber, int toEventCeilingNumber);
 
-  /**
-   * Schedules the execution of a <b>Write Ceilings</b> command to write a single event ceiling.
-   *
-   * <p>Once this command is processed, the ceiling value available in {@link LegacySam} is updated.
-   *
-   * @param eventCeilingNumber The number of the event ceiling to write.
-   * @param newValue The desired value for the event ceiling (defined as a positive int {@code <=}
-   *     16777215 [FFFFFFh]).
-   * @return The current instance.
-   * @throws IllegalArgumentException If the provided argument is out of range.
-   * @since 0.1.0
-   */
-  T prepareWriteEventCeiling(int eventCeilingNumber, int newValue);
-
-  /**
-   * Schedules the execution of a <b>Write Ceilings</b> command to write multiple event ceilings.
-   *
-   * <p>Once this command is processed, the ceiling values available in {@link LegacySam} are
-   * updated.
-   *
-   * @param fromEventCeilingNumber The number of the first event ceiling to write.
-   * @param newValues A list of event ceilings values to be written from the indicated position
-   *     (each event ceiling value is defined as a positive int {@code <=} 16777215 [FFFFFFh]).
-   * @return The current instance.
-   * @throws IllegalArgumentException If one of the provided argument is out of range.
-   * @since 0.1.0
-   */
-  T prepareWriteEventCeilings(int fromEventCeilingNumber, List<Integer> newValues);
+  //  /**
+  //   * Schedules the execution of a <b>Write Ceilings</b> command to write a single event ceiling.
+  //   *
+  //   * <p>Once this command is processed, the ceiling value available in {@link LegacySam} is
+  // updated.
+  //   *
+  //   * @param eventCeilingNumber The number of the event ceiling to write.
+  //   * @param newValue The desired value for the event ceiling (defined as a positive int {@code
+  // <=}
+  //   *     16777215 [FFFFFFh]).
+  //   * @return The current instance.
+  //   * @throws IllegalArgumentException If the provided argument is out of range.
+  //   * @since 0.1.0
+  //   */
+  //  T prepareWriteEventCeiling(int eventCeilingNumber, int newValue);
+  //
+  //  /**
+  //   * Schedules the execution of a <b>Write Ceilings</b> command to write multiple event
+  // ceilings.
+  //   *
+  //   * <p>Once this command is processed, the ceiling values available in {@link LegacySam} are
+  //   * updated.
+  //   *
+  //   * @param fromEventCeilingNumber The number of the first event ceiling to write.
+  //   * @param newValues A list of event ceilings values to be written from the indicated position
+  //   *     (each event ceiling value is defined as a positive int {@code <=} 16777215 [FFFFFFh]).
+  //   * @return The current instance.
+  //   * @throws IllegalArgumentException If one of the provided argument is out of range.
+  //   * @since 0.1.0
+  //   */
+  //  T prepareWriteEventCeilings(int fromEventCeilingNumber, List<Integer> newValues);
 }
