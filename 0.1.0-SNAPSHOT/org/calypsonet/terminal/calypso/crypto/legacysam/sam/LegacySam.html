@@ -185,14 +185,14 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getApplicationSubType()">getApplicationSubType</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the application subtype</div>
+<div class="block">Returns the application subtype</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getApplicationType()">getApplicationType</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the application type</div>
+<div class="block">Returns the application type</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -229,49 +229,49 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getPlatform()">getPlatform</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the platform identifier</div>
+<div class="block">Returns the platform identifier</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProductInfo()">getProductInfo</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets a text description of the SAM.</div>
+<div class="block">Returns a text description of the SAM.</div>
 </td>
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="LegacySam.ProductType.html" title="enum in org.calypsonet.terminal.calypso.crypto.legacysam.sam">LegacySam.ProductType</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getProductType()">getProductType</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the SAM product type.</div>
+<div class="block">Returns the SAM product type.</div>
 </td>
 </tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>byte[]</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSerialNumber()">getSerialNumber</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the SAM serial number as an array of bytes</div>
+<div class="block">Returns the SAM serial number as an array of bytes</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSoftwareIssuer()">getSoftwareIssuer</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the software issuer identifier</div>
+<div class="block">Returns the software issuer identifier</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSoftwareRevision()">getSoftwareRevision</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the software revision number</div>
+<div class="block">Returns the software revision number</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#getSoftwareVersion()">getSoftwareVersion</a></span>()</code></th>
 <td class="colLast">
-<div class="block">Gets the software version number</div>
+<div class="block">Returns the software version number</div>
 </td>
 </tr>
 </table>
@@ -305,7 +305,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getProductType</h4>
 <pre class="methodSignature"><a href="LegacySam.ProductType.html" title="enum in org.calypsonet.terminal.calypso.crypto.legacysam.sam">LegacySam.ProductType</a>&nbsp;getProductType()</pre>
-<div class="block">Gets the SAM product type.</div>
+<div class="block">Returns the SAM product type.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>The identified product type.</dd>
@@ -321,7 +321,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getProductInfo</h4>
 <pre class="methodSignature">java.lang.String&nbsp;getProductInfo()</pre>
-<div class="block">Gets a text description of the SAM.</div>
+<div class="block">Returns a text description of the SAM.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A not null String.</dd>
@@ -337,7 +337,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getSerialNumber</h4>
 <pre class="methodSignature">byte[]&nbsp;getSerialNumber()</pre>
-<div class="block">Gets the SAM serial number as an array of bytes</div>
+<div class="block">Returns the SAM serial number as an array of bytes</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A not null array of bytes</dd>
@@ -353,7 +353,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getPlatform</h4>
 <pre class="methodSignature">byte&nbsp;getPlatform()</pre>
-<div class="block">Gets the platform identifier</div>
+<div class="block">Returns the platform identifier</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -369,7 +369,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getApplicationType</h4>
 <pre class="methodSignature">byte&nbsp;getApplicationType()</pre>
-<div class="block">Gets the application type</div>
+<div class="block">Returns the application type</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -385,7 +385,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getApplicationSubType</h4>
 <pre class="methodSignature">byte&nbsp;getApplicationSubType()</pre>
-<div class="block">Gets the application subtype</div>
+<div class="block">Returns the application subtype</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -401,7 +401,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getSoftwareIssuer</h4>
 <pre class="methodSignature">byte&nbsp;getSoftwareIssuer()</pre>
-<div class="block">Gets the software issuer identifier</div>
+<div class="block">Returns the software issuer identifier</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -417,7 +417,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getSoftwareVersion</h4>
 <pre class="methodSignature">byte&nbsp;getSoftwareVersion()</pre>
-<div class="block">Gets the software version number</div>
+<div class="block">Returns the software version number</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -433,7 +433,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <li class="blockList">
 <h4>getSoftwareRevision</h4>
 <pre class="methodSignature">byte&nbsp;getSoftwareRevision()</pre>
-<div class="block">Gets the software revision number</div>
+<div class="block">Returns the software revision number</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>A byte</dd>
@@ -454,7 +454,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eventCounterNumber</code> - The number of the event counter (in range [0..26]).</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>null if the event counter value is not set.</dd>
+<dd>Null if the event counter value is not set.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 </dl>
@@ -471,7 +471,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
  number and <code>value</code> is the counter value.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a not null map.</dd>
+<dd>A not null map.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 </dl>
@@ -489,7 +489,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>eventCeilingNumber</code> - The number of the event ceiling (in range [0..26]).</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>null if the event ceiling value is not set.</dd>
+<dd>Null if the event ceiling value is not set.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 </dl>
@@ -506,7 +506,7 @@ extends org.calypsonet.terminal.reader.selection.spi.SmartCard</pre>
  number and <code>value</code> is the ceiling value.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>a not null map.</dd>
+<dd>A not null map.</dd>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 </dl>
