@@ -17,7 +17,7 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.sam;
  *
  * @since 0.1.0
  */
-public interface CardSelectionFactory {
+public interface LegacySamSelectionFactory {
 
   /**
    * Creates a new instance of {@link LegacySamSelection}.
