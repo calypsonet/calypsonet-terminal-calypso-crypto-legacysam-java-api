@@ -16,7 +16,7 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
  *
  * @since 0.1.0
  */
-public interface CommandDataFactory {
+public interface LegacySamCommandDataFactory {
 
   /**
    * Creates a new instance of {@link BasicSignatureComputationData}.
