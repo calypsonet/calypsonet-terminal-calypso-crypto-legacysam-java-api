@@ -17,14 +17,14 @@ import org.calypsonet.terminal.reader.CardReader;
 /**
  * Transaction manager dedicated to operations performed without control SAM.
  *
- * <p>Use the {@link LegacySamTransactionManagerFactory#createFreeTransactionManager(CardReader,
+ * <p>Use the {@link LSTransactionManagerFactory#createFreeTransactionManager(CardReader,
  * LegacySam)} method to create an instance of this interface.
  *
  * @since 0.1.0
  */
-public interface LegacySamFreeTransactionManager
-    extends LegacySamReadTransactionManager<LegacySamFreeTransactionManager>,
-        LegacySamFreeWriteTransactionManager<LegacySamFreeTransactionManager> {
+public interface LSFreeTransactionManager
+    extends LSReadTransactionManager<LSFreeTransactionManager>,
+        LSFreeWriteTransactionManager<LSFreeTransactionManager> {
 
   /**
    * Schedules the execution of a "Data Cipher" or "PSO Compute Signature" SAM command.
@@ -54,7 +54,7 @@ public interface LegacySamFreeTransactionManager
    * @see TraceableSignatureComputationData
    * @since 0.1.0
    */
-  LegacySamFreeTransactionManager prepareComputeSignature(CommonSignatureComputationData<?> data);
+  LSFreeTransactionManager prepareComputeSignature(CommonSignatureComputationData<?> data);
 
   /**
    * Schedules the execution of a "Data Cipher" or "PSO Verify Signature" SAM command.
@@ -73,5 +73,5 @@ public interface LegacySamFreeTransactionManager
    * @see TraceableSignatureVerificationData
    * @since 0.1.0
    */
-  LegacySamFreeTransactionManager prepareVerifySignature(CommonSignatureVerificationData<?> data);
+  LSFreeTransactionManager prepareVerifySignature(CommonSignatureVerificationData<?> data);
 }

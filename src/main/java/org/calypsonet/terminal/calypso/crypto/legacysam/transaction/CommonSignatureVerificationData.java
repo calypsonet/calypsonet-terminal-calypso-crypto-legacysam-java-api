@@ -13,8 +13,8 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
  * Contains the input/output data of the {@link
- * LegacySamFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method
- * for common signature verification modes.
+ * LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method for
+ * common signature verification modes.
  *
  * @param <T> The type of the lowest level child object.
  * @since 0.1.0

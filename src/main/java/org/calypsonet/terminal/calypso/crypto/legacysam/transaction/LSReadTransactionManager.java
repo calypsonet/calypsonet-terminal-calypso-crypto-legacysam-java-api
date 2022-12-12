@@ -19,8 +19,8 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
  * @param <T> The type of the lowest level child object.
  * @since 0.1.0
  */
-public interface LegacySamReadTransactionManager<T extends LegacySamReadTransactionManager<T>>
-    extends LegacySamTransactionManager<T> {
+public interface LSReadTransactionManager<T extends LSReadTransactionManager<T>>
+    extends LSTransactionManager<T> {
 
   /**
    * Schedules the execution of a <b>Read Event Counter</b> command to read a single event counter.

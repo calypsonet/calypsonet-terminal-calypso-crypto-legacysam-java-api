@@ -11,12 +11,24 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
+import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
+import org.calypsonet.terminal.reader.CardReader;
+
 /**
- * Transaction manager dedicated to free write operations.
+ * Factory of all SAM transaction managers.
  *
- * @param <T> The type of the lowest level child object.
  * @since 0.1.0
  */
-public interface LegacySamFreeWriteTransactionManager<
-        T extends LegacySamFreeWriteTransactionManager<T>>
-    extends LegacySamTransactionManager<T> {}
+public interface LSTransactionManagerFactory {
+
+  /**
+   * Creates an instance of {@link LSFreeTransactionManager}
+   *
+   * @param samReader The reader to use to communicate with the SAM.
+   * @param sam The SAM image.
+   * @return A new instance of {@link LSFreeTransactionManager}.
+   * @throws IllegalArgumentException If one the arguments is null.
+   * @since 0.1.0
+   */
+  LSFreeTransactionManager createFreeTransactionManager(CardReader samReader, LegacySam sam);
+}

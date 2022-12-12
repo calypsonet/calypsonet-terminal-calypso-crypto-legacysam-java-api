@@ -15,8 +15,8 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.spi.LegacySamRevocationS
 
 /**
  * Contains the input/output data of the {@link
- * LegacySamFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method
- * for traceable signature verification using the "PSO Verify Signature" SAM command.
+ * LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method for
+ * traceable signature verification using the "PSO Verify Signature" SAM command.
  *
  * @since 0.1.0
  */
@@ -36,7 +36,7 @@ public interface TraceableSignatureVerificationData
    *     signed the data will be checked by the SAM revocation service.
    * @return The current instance.
    * @see TraceableSignatureComputationData#withSamTraceabilityMode(int, boolean)
-   * @see LegacySamFreeTransactionManager
+   * @see LSFreeTransactionManager
    * @since 0.1.0
    */
   TraceableSignatureVerificationData withSamTraceabilityMode(

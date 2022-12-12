@@ -17,7 +17,7 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
  * @param <T> The type of the lowest level child object.
  * @since 0.1.0
  */
-public interface LegacySamTransactionManager<T extends LegacySamTransactionManager<T>> {
+public interface LSTransactionManager<T extends LSTransactionManager<T>> {
 
   /**
    * Process all previously prepared commands.

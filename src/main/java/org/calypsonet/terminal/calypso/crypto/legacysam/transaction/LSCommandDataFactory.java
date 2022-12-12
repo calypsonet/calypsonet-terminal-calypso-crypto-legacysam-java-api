@@ -16,13 +16,13 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
  *
  * @since 0.1.0
  */
-public interface LegacySamCommandDataFactory {
+public interface LSCommandDataFactory {
 
   /**
    * Creates a new instance of {@link BasicSignatureComputationData}.
    *
    * @return A new instance.
-   * @see LegacySamFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)
+   * @see LSFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)
    * @since 0.1.0
    */
   BasicSignatureComputationData createBasicSignatureComputationData();
@@ -31,7 +31,7 @@ public interface LegacySamCommandDataFactory {
    * Creates a new instance of {@link TraceableSignatureComputationData}.
    *
    * @return A new instance.
-   * @see LegacySamFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)
+   * @see LSFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)
    * @since 0.1.0
    */
   TraceableSignatureComputationData createTraceableSignatureComputationData();
@@ -40,7 +40,7 @@ public interface LegacySamCommandDataFactory {
    * Creates a new instance of {@link BasicSignatureVerificationData}.
    *
    * @return A new instance.
-   * @see LegacySamFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)
+   * @see LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)
    * @since 0.1.0
    */
   BasicSignatureVerificationData createBasicSignatureVerificationData();
@@ -49,7 +49,7 @@ public interface LegacySamCommandDataFactory {
    * Creates a new instance of {@link TraceableSignatureVerificationData}.
    *
    * @return A new instance.
-   * @see LegacySamFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)
+   * @see LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)
    * @since 0.1.0
    */
   TraceableSignatureVerificationData createTraceableSignatureVerificationData();

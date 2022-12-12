@@ -13,8 +13,8 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
  * Contains the input/output data of the {@link
- * LegacySamFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)} method
- * for common signature computation modes.
+ * LSFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)} method for
+ * common signature computation modes.
  *
  * @param <T> The type of the lowest level child object.
  * @since 0.1.0

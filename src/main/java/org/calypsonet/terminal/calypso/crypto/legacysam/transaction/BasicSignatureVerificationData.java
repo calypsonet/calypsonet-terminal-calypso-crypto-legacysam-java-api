@@ -13,8 +13,8 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
  * Contains the input/output data of the {@link
- * LegacySamFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method
- * for basic signature verification using the "Data Cipher" SAM command.
+ * LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method for
+ * basic signature verification using the "Data Cipher" SAM command.
  *
  * @since 0.1.0
  */
