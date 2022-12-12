@@ -12,7 +12,7 @@
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
- * Factory of all complex command in/out data.
+ * Factory of all input/output data of complex commands.
  *
  * @since 0.1.0
  */

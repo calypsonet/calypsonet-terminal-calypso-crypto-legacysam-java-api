@@ -1,4 +1,4 @@
-# Notices for 'Terminal Calypso API' Java implementation
+# Notices for 'Terminal Calypso Crypto Legacy SAM API' Java implementation
 
 This content is produced and maintained by Calypso Networks Association.
 

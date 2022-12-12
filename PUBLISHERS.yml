@@ -1,4 +1,4 @@
-url: https://github.com/calypsonet/calypsonet-terminal-calypso-java-api
+url: https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api
 organization:
   name: Calypso Networks Association
   url: https://calypsonet.org/
@@ -10,9 +10,9 @@ developers:
   - name: Calypso Networks Association Technical Team
     email: support-dev@calypsonet.org
 scm:
-  connection: scm:git:git://github.com/calypsonet/calypsonet-terminal-calypso-java-api.git
-  developerConnection: scm:git:https://github.com/calypsonet/calypsonet-terminal-calypso-java-api.git
-  url: https://github.com/calypsonet/calypsonet-terminal-calypso-java-api
+  connection: scm:git:git://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api.git
+  developerConnection: scm:git:https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api.git
+  url: https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api
 ciManagement:
   system: GitHub Actions
-  url: https://github.com/calypsonet/calypsonet-terminal-calypso-java-api/actions
+  url: https://github.com/calypsonet/calypsonet-terminal-calypso-crypto-legacysam-java-api/actions

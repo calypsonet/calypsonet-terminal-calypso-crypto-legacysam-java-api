@@ -1,5 +1,5 @@
 /**
- * Handlers to be implemented by end user applications.
+ * Handlers to be implemented by end user application.
  *
  * @since 0.1.0
  */

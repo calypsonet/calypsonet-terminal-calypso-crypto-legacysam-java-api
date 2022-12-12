@@ -12,11 +12,7 @@
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
- * Indicates that a signature is incorrect. This can happen in the following cases:
- *
- * <ul>
- *   <li>The "PSO Verify Signature" SAM command status is 6988h;
- * </ul>
+ * Indicates that a signature is invalid.
  *
  * @since 0.1.0
  */

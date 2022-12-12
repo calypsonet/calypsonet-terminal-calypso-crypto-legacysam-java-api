@@ -11,7 +11,7 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
-import org.calypsonet.terminal.calypso.crypto.legacysam.spi.LegacySamRevocationServiceSpi;
+import org.calypsonet.terminal.calypso.crypto.legacysam.spi.LSRevocationServiceSpi;
 
 /**
  * Contains the input/output data of the {@link
@@ -40,9 +40,7 @@ public interface TraceableSignatureVerificationData
    * @since 0.1.0
    */
   TraceableSignatureVerificationData withSamTraceabilityMode(
-      int offset,
-      boolean isPartialSamSerialNumber,
-      LegacySamRevocationServiceSpi samRevocationService);
+      int offset, boolean isPartialSamSerialNumber, LSRevocationServiceSpi samRevocationService);
 
   /**
    * Indicates that the signature has been computed in non "Busy" mode.

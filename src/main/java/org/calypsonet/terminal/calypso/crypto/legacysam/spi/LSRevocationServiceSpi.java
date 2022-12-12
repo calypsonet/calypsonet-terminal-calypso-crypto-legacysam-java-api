@@ -16,7 +16,7 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.spi;
  *
  * @since 0.1.0
  */
-public interface LegacySamRevocationServiceSpi {
+public interface LSRevocationServiceSpi {
 
   /**
    * Checks if the SAM with the provided serial number is revoked or not.

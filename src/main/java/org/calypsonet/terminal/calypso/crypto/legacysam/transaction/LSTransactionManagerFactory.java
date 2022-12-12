@@ -22,12 +22,12 @@ import org.calypsonet.terminal.reader.CardReader;
 public interface LSTransactionManagerFactory {
 
   /**
-   * Creates an instance of {@link LSFreeTransactionManager}
+   * Creates an instance of {@link LSFreeTransactionManager}.
    *
    * @param samReader The reader to use to communicate with the SAM.
    * @param sam The SAM image.
    * @return A new instance of {@link LSFreeTransactionManager}.
-   * @throws IllegalArgumentException If one the arguments is null.
+   * @throws IllegalArgumentException If an argument is null.
    * @since 0.1.0
    */
   LSFreeTransactionManager createFreeTransactionManager(CardReader samReader, LegacySam sam);

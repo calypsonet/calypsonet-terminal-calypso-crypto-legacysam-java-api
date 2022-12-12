@@ -22,7 +22,7 @@ import org.calypsonet.terminal.reader.selection.spi.SmartCard;
 public interface LegacySam extends SmartCard {
 
   /**
-   * Gets the SAM product type.
+   * Returns the SAM product type.
    *
    * @return The identified product type.
    * @since 0.1.0
@@ -30,7 +30,7 @@ public interface LegacySam extends SmartCard {
   ProductType getProductType();
 
   /**
-   * Gets a text description of the SAM.
+   * Returns a text description of the SAM.
    *
    * @return A not null String.
    * @since 0.1.0
@@ -38,7 +38,7 @@ public interface LegacySam extends SmartCard {
   String getProductInfo();
 
   /**
-   * Gets the SAM serial number as an array of bytes
+   * Returns the SAM serial number as an array of bytes
    *
    * @return A not null array of bytes
    * @since 0.1.0
@@ -46,7 +46,7 @@ public interface LegacySam extends SmartCard {
   byte[] getSerialNumber();
 
   /**
-   * Gets the platform identifier
+   * Returns the platform identifier
    *
    * @return A byte
    * @since 0.1.0
@@ -54,7 +54,7 @@ public interface LegacySam extends SmartCard {
   byte getPlatform();
 
   /**
-   * Gets the application type
+   * Returns the application type
    *
    * @return A byte
    * @since 0.1.0
@@ -62,7 +62,7 @@ public interface LegacySam extends SmartCard {
   byte getApplicationType();
 
   /**
-   * Gets the application subtype
+   * Returns the application subtype
    *
    * @return A byte
    * @since 0.1.0
@@ -70,7 +70,7 @@ public interface LegacySam extends SmartCard {
   byte getApplicationSubType();
 
   /**
-   * Gets the software issuer identifier
+   * Returns the software issuer identifier
    *
    * @return A byte
    * @since 0.1.0
@@ -78,7 +78,7 @@ public interface LegacySam extends SmartCard {
   byte getSoftwareIssuer();
 
   /**
-   * Gets the software version number
+   * Returns the software version number
    *
    * @return A byte
    * @since 0.1.0
@@ -86,7 +86,7 @@ public interface LegacySam extends SmartCard {
   byte getSoftwareVersion();
 
   /**
-   * Gets the software revision number
+   * Returns the software revision number
    *
    * @return A byte
    * @since 0.1.0
@@ -97,7 +97,7 @@ public interface LegacySam extends SmartCard {
    * Returns the value of an event counter.
    *
    * @param eventCounterNumber The number of the event counter (in range [0..26]).
-   * @return null if the event counter value is not set.
+   * @return Null if the event counter value is not set.
    * @since 0.1.0
    */
   Integer getEventCounter(int eventCounterNumber);
@@ -106,7 +106,7 @@ public interface LegacySam extends SmartCard {
    * Returns the value of known event counters in a sorted map where {@code key} is the counter
    * number and {@code value} is the counter value.
    *
-   * @return a not null map.
+   * @return A not null map.
    * @since 0.1.0
    */
   SortedMap<Integer, Integer> getEventCounters();
@@ -115,7 +115,7 @@ public interface LegacySam extends SmartCard {
    * Returns the value of an event ceiling.
    *
    * @param eventCeilingNumber The number of the event ceiling (in range [0..26]).
-   * @return null if the event ceiling value is not set.
+   * @return Null if the event ceiling value is not set.
    * @since 0.1.0
    */
   Integer getEventCeiling(int eventCeilingNumber);
@@ -124,7 +124,7 @@ public interface LegacySam extends SmartCard {
    * Returns the value of known event ceilings in a sorted map where {@code key} is the ceiling
    * number and {@code value} is the ceiling value.
    *
-   * @return a not null map.
+   * @return A not null map.
    * @since 0.1.0
    */
   SortedMap<Integer, Integer> getEventCeilings();
