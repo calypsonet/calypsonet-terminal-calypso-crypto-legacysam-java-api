@@ -1,5 +1,5 @@
 /* **************************************************************************************
- * Copyright (c) 2022 Calypso Networks Association https://calypsonet.org/
+ * Copyright (c) 2023 Calypso Networks Association https://calypsonet.org/
  *
  * See the NOTICE file(s) distributed with this work for additional information
  * regarding copyright ownership.
@@ -12,10 +12,18 @@
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
- * Transaction manager dedicated to free write operations.
+ * Factory of {@link LSSecuritySetting} to be used by transaction managers performing secure
+ * operations with the assistance of a control SAM.
  *
- * @param <T> The type of the lowest level child object.
- * @since 0.1.0
+ * @since 0.2.0
  */
-public interface LSFreeWriteTransactionManager<T extends LSFreeWriteTransactionManager<T>>
-    extends LSTransactionManager<T> {}
+public interface LSSecuritySettingFactory {
+
+  /**
+   * Returns a new instance of {@link LSSecuritySetting}.
+   *
+   * @return A not null reference.
+   * @since 0.2.0
+   */
+  LSSecuritySetting createSecuritySetting();
+}

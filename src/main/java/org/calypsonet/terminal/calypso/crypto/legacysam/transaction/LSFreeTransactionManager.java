@@ -24,7 +24,7 @@ import org.calypsonet.terminal.reader.CardReader;
  */
 public interface LSFreeTransactionManager
     extends LSReadTransactionManager<LSFreeTransactionManager>,
-        LSFreeWriteTransactionManager<LSFreeTransactionManager> {
+        LSTransactionManager<LSFreeTransactionManager> {
 
   /**
    * Schedules the execution of a "Data Cipher" or "PSO Compute Signature" SAM command.
@@ -74,4 +74,13 @@ public interface LSFreeTransactionManager
    * @since 0.1.0
    */
   LSFreeTransactionManager prepareVerifySignature(CommonSignatureVerificationData<?> data);
+
+  /**
+   * Runs the required SAM commands to obtain the security context, which will be used for future
+   * asynchronous write operations.
+   *
+   * @return A not empty string containing the context.
+   * @since 0.2.0
+   */
+  String exportTargetSamContextForAsyncTransaction();
 }

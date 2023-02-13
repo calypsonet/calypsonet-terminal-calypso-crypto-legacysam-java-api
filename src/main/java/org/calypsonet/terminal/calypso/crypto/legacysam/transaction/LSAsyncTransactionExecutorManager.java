@@ -1,5 +1,5 @@
 /* **************************************************************************************
- * Copyright (c) 2022 Calypso Networks Association https://calypsonet.org/
+ * Copyright (c) 2023 Calypso Networks Association https://calypsonet.org/
  *
  * See the NOTICE file(s) distributed with this work for additional information
  * regarding copyright ownership.
@@ -11,15 +11,5 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
-/**
- * Contains the input/output data of the {@link
- * LSFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)} method for
- * basic signature computation using the "Data Cipher" SAM command.
- *
- * <p>Use method {@link LSCommandDataFactory#createBasicSignatureComputationData()} to create an
- * instance of this object.
- *
- * @since 0.1.0
- */
-public interface BasicSignatureComputationData
-    extends CommonSignatureComputationData<BasicSignatureComputationData> {}
+public interface LSAsyncTransactionExecutorManager
+    extends LSTransactionManager<LSAsyncTransactionExecutorManager> {}

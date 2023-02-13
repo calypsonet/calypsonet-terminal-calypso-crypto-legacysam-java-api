@@ -12,6 +12,7 @@
 package org.calypsonet.terminal.calypso.crypto.legacysam.sam;
 
 import java.util.SortedMap;
+import org.calypsonet.terminal.calypso.crypto.legacysam.SystemKeyType;
 import org.calypsonet.terminal.reader.selection.spi.SmartCard;
 
 /**
@@ -94,40 +95,59 @@ public interface LegacySam extends SmartCard {
   byte getSoftwareRevision();
 
   /**
-   * Returns the value of an event counter.
+   * Returns the value of a counter.
    *
-   * @param eventCounterNumber The number of the event counter (in range [0..26]).
-   * @return Null if the event counter value is not set.
+   * @param counterNumber The number of the counter (in range [0..26]).
+   * @return Null if the counter value is not set.
    * @since 0.1.0
    */
-  Integer getEventCounter(int eventCounterNumber);
+  Integer getCounter(int counterNumber);
 
   /**
-   * Returns the value of known event counters in a sorted map where {@code key} is the counter
-   * number and {@code value} is the counter value.
+   * Returns the value of known counters in a sorted map where {@code key} is the counter number and
+   * {@code value} is the counter value.
    *
    * @return A not null map.
    * @since 0.1.0
    */
-  SortedMap<Integer, Integer> getEventCounters();
+  SortedMap<Integer, Integer> getCounters();
 
   /**
-   * Returns the value of an event ceiling.
+   * Check if manual incrementation of the counter is authorized.
    *
-   * @param eventCeilingNumber The number of the event ceiling (in range [0..26]).
-   * @return Null if the event ceiling value is not set.
+   * @param counterNumber The number of the counter being checked.
+   * @return null if the incrementing state is unknown, true if manual incrementing is authorized,
+   *     false otherwise.
+   * @since 0.2.0
+   */
+  Boolean isManualCounterIncrementAuthorized(int counterNumber);
+
+  /**
+   * Returns the value of an counter ceiling.
+   *
+   * @param counterNumber The number of the counter ceiling (in range [0..26]).
+   * @return Null if the counter ceiling value is not set.
    * @since 0.1.0
    */
-  Integer getEventCeiling(int eventCeilingNumber);
+  Integer getCounterCeiling(int counterNumber);
 
   /**
-   * Returns the value of known event ceilings in a sorted map where {@code key} is the ceiling
+   * Returns the value of known counter ceilings in a sorted map where {@code key} is the ceiling
    * number and {@code value} is the ceiling value.
    *
    * @return A not null map.
    * @since 0.1.0
    */
-  SortedMap<Integer, Integer> getEventCeilings();
+  SortedMap<Integer, Integer> getCounterCeilings();
+
+  /**
+   * Returns the parameters of the system key whose type is provided.
+   *
+   * @param systemKeyType The type of system key.
+   * @return null if there is no parameter available for the specified key type.
+   * @since 0.2.0
+   */
+  KeyParameter getSystemKeyParameter(SystemKeyType systemKeyType);
 
   /**
    * All Calypso SAM products supported by this API.

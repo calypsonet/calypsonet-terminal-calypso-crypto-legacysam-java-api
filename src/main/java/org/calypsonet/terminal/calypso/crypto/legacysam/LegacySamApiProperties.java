@@ -23,7 +23,7 @@ public class LegacySamApiProperties {
    *
    * @since 0.1.0
    */
-  public static final String VERSION = "0.1";
+  public static final String VERSION = "0.2";
 
   /** Private constructor */
   private LegacySamApiProperties() {}

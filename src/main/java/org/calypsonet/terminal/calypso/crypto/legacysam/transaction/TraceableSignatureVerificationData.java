@@ -18,6 +18,9 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.spi.LSRevocationServiceS
  * LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method for
  * traceable signature verification using the "PSO Verify Signature" SAM command.
  *
+ * <p>Use method {@link LSCommandDataFactory#createTraceableSignatureVerificationData()} to create
+ * an instance of this object.
+ *
  * @since 0.1.0
  */
 public interface TraceableSignatureVerificationData

@@ -16,6 +16,9 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
  * LSFreeTransactionManager#prepareVerifySignature(CommonSignatureVerificationData)} method for
  * basic signature verification using the "Data Cipher" SAM command.
  *
+ * <p>Use method {@link LSCommandDataFactory#createBasicSignatureVerificationData()} to create an
+ * instance of this object.
+ *
  * @since 0.1.0
  */
 public interface BasicSignatureVerificationData
