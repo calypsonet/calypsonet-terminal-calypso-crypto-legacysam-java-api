@@ -17,12 +17,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - `LegacySam.isManualCounterIncrementAuthorized` method.
 - `LSTransactionManagerFactory.createAsyncTransactionCreatorManager` method.
 - `LSTransactionManagerFactory.createAsyncTransactionExecutorManager` method.
-- `LSWriteTransactionManager.prepareWriteCounterCeiling` method.
-- `LSWriteTransactionManager.prepareWriteCounterConfiguration` method.
 - `LSFreeTransactionManager.exportTargetSamContextForAsyncTransaction` method.
 - `LSReadTransactionManager.prepareReadSystemKeyParameters` method.
 - `LSReadTransactionManager.prepareReadCounterStatus` method.
 - `LSReadTransactionManager.prepareReadAllCountersStatus` method.
+- `LSWriteTransactionManager.prepareWriteCounterCeiling` method.
+- `LSWriteTransactionManager.prepareWriteCounterConfiguration` method.
 ### Upgraded
 - "Calypsonet Terminal Reader API" to version `1.2.0`.
 
