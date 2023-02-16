@@ -16,8 +16,8 @@ import org.calypsonet.terminal.reader.CardReader;
 
 /**
  * Transaction manager dedicated to operations performed asynchronously. This manager prepares
- * commands using a control SAM, and the result is available as a string to be imported and executed
- * by the method {@link LSAsyncTransactionExecutorManager#processCommands()}, then executed.
+ * commands using a control SAM, and the result is available as a string to be imported and
+ * processed by a {@link LSAsyncTransactionExecutorManager}.
  *
  * <p>Use the {@link LSTransactionManagerFactory#createFreeTransactionManager(CardReader,
  * LegacySam)} method to create an instance of this interface.
