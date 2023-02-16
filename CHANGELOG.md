@@ -6,9 +6,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- APIs related to 
-  - write transactions (counter ceilings, key parameters)
-  - asynchronous transactions in static mode (export / import write commands)
+- `SystemKeyType` API.
+- `KeyParameter` API.
+- `LSSecuritySetting` API.
+- `LSWriteTransactionManager` API.
+- `LSAsyncTransactionCreatorManager` API.
+- `LSAsyncTransactionExecutorManager` API.
+- `LSSecuritySettingFactory` API.
+- `LegacySam.getSystemKeyParameter` method.
+- `LegacySam.isManualCounterIncrementAuthorized` method.
+- `LSTransactionManagerFactory.createAsyncTransactionCreatorManager` method.
+- `LSTransactionManagerFactory.createAsyncTransactionExecutorManager` method.
+- `LSWriteTransactionManager.prepareWriteCounterCeiling` method.
+- `LSWriteTransactionManager.prepareWriteCounterConfiguration` method.
+- `LSFreeTransactionManager.exportTargetSamContextForAsyncTransaction` method.
+- `LSReadTransactionManager.prepareReadSystemKeyParameters` method.
+- `LSReadTransactionManager.prepareReadCounterStatus` method.
+- `LSReadTransactionManager.prepareReadAllCountersStatus` method.
 ### Upgraded
 - "Calypsonet Terminal Reader API" to version `1.2.0`.
 
