@@ -1,4 +1,4 @@
-# Calypsonet Terminal Calypso Java API
+# Calypsonet Terminal Calypso Crypto Legacy SAM Java API
 
 This is the repository for the **Calypso Networks Association**'s reference **Terminal Calypso Crypto Legacy SAM API** for Java.
 
