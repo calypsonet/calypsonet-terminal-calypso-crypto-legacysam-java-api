@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - APIs related to 
   - write transactions (counter ceilings, key parameters)
   - asynchronous transactions in static mode (export / import write commands)
+### Upgraded
+- "Calypsonet Terminal Reader API" to version `1.2.0`.
 
 ## [0.1.0] - 2022-12-12
 ### Added
