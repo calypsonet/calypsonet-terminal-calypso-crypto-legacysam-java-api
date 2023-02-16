@@ -22,6 +22,9 @@ import org.calypsonet.terminal.reader.CardReader;
  * <p>Use the {@link LSTransactionManagerFactory#createFreeTransactionManager(CardReader,
  * LegacySam)} method to create an instance of this interface.
  *
+ * @see LSTransactionManagerFactory#createAsyncTransactionCreatorManager(String, LSSecuritySetting)
+ * @see LSFreeTransactionManager#exportTargetSamContextForAsyncTransaction()
+ * @see LSAsyncTransactionExecutorManager
  * @since 0.2.0
  */
 public interface LSAsyncTransactionCreatorManager
@@ -34,7 +37,6 @@ public interface LSAsyncTransactionCreatorManager
    * LSAsyncTransactionExecutorManager#processCommands()}.
    *
    * @return A not empty string.
-   * @throws IllegalStateException If no command were prepared.
    * @see LSAsyncTransactionExecutorManager#processCommands()
    * @since 0.2.0
    */

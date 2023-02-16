@@ -25,7 +25,8 @@ public interface LSWriteTransactionManager<T extends LSWriteTransactionManager<T
   /**
    * Schedules the execution of a <b>Write Ceilings</b> command to write a single counter ceiling.
    *
-   * <p>Once this command is processed, the ceiling value available in {@link LegacySam} is updated.
+   * <p>Warning: in the case of an asynchronous transaction the content of the {@link LegacySam}
+   * object will not be updated.
    *
    * @param counterNumber The number of the counter whose ceiling is to be written (in range
    *     [0..26]).
@@ -46,8 +47,8 @@ public interface LSWriteTransactionManager<T extends LSWriteTransactionManager<T
    * method for each of the 8 other counters of the same record. Otherwise, an exception will be
    * raised when executing the {@link #processCommands()} method.
    *
-   * <p>Once this command is processed, the ceiling values available in {@link LegacySam} are
-   * updated.
+   * <p>Warning: in the case of an asynchronous transaction the content of the {@link LegacySam}
+   * object will not be updated.
    *
    * @param counterNumber The number of the counter whose ceiling is to be written (in range
    *     [0..26]).

@@ -76,10 +76,16 @@ public interface LSFreeTransactionManager
   LSFreeTransactionManager prepareVerifySignature(CommonSignatureVerificationData<?> data);
 
   /**
-   * Runs the required SAM commands to obtain the security context, which will be used for future
-   * asynchronous write operations.
+   * Executes the required SAM commands to obtain the security context, which will be used for
+   * future asynchronous write operations.
+   *
+   * <p>The exported target SAM context must be provided when creating an {@link
+   * LSAsyncTransactionCreatorManager} with the method {@link
+   * LSTransactionManagerFactory#createAsyncTransactionCreatorManager(String, LSSecuritySetting)}.
    *
    * @return A not empty string containing the context.
+   * @see LSTransactionManagerFactory#createAsyncTransactionCreatorManager(String,
+   *     LSSecuritySetting)
    * @since 0.2.0
    */
   String exportTargetSamContextForAsyncTransaction();

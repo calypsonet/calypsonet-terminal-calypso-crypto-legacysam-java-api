@@ -15,14 +15,14 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
 import org.calypsonet.terminal.reader.CardReader;
 
 /**
- * Data to manage the security operations of a Legacy SAM transaction.
+ * Settings to manage the security operations of a legacy SAM transaction.
  *
  * @since 0.2.0
  */
 public interface LSSecuritySetting {
 
   /**
-   * Defines the control SAM and the reader through which it can be accessed. It will be utilized to
+   * Defines the control SAM and the reader through which it can be accessed. It will be used to
    * perform all necessary cryptographic operations.
    *
    * @param samReader The reader to use to communicate with the SAM.

@@ -11,5 +11,20 @@
  ************************************************************************************** */
 package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
+import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
+import org.calypsonet.terminal.reader.CardReader;
+
+/**
+ * Transaction manager dedicated to execute pre-prepared commands asynchronously.
+ *
+ * <p>Use the {@link LSTransactionManagerFactory#createAsyncTransactionExecutorManager(CardReader,
+ * LegacySam, String)} method to create an instance of this transaction manager.
+ *
+ * @see LSTransactionManagerFactory#createAsyncTransactionExecutorManager(CardReader, LegacySam,
+ *     String)
+ * @see LSFreeTransactionManager#exportTargetSamContextForAsyncTransaction()
+ * @see LSAsyncTransactionCreatorManager
+ * @since 0.2.0
+ */
 public interface LSAsyncTransactionExecutorManager
     extends LSTransactionManager<LSAsyncTransactionExecutorManager> {}

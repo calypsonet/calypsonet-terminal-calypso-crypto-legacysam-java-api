@@ -13,7 +13,7 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
 
 /**
  * Factory of {@link LSSecuritySetting} to be used by transaction managers performing secure
- * operations with the assistance of a control SAM.
+ * operations with a control SAM.
  *
  * @since 0.2.0
  */

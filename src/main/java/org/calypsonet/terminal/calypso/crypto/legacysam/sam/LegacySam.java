@@ -16,7 +16,7 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.SystemKeyType;
 import org.calypsonet.terminal.reader.selection.spi.SmartCard;
 
 /**
- * A static and partial view of the legacy SAM's content.
+ * A partial image of the legacy SAM's content.
  *
  * @since 0.1.0
  */

@@ -44,8 +44,6 @@ public interface LSReadTransactionManager<T extends LSReadTransactionManager<T>>
    * read. The number of commands actually transmitted to the SAM will be optimized when the {@link
    * #processCommands()} method is executed.
    *
-   * <p>Once this command is processed, the result is available in {@link LegacySam}.
-   *
    * @param counterNumber The number of the counter whose status is to be read (in range [0..26]).
    * @return The current instance.
    * @throws IllegalArgumentException If the provided argument is out of range.
@@ -56,8 +54,6 @@ public interface LSReadTransactionManager<T extends LSReadTransactionManager<T>>
   /**
    * Schedules the execution of a <b>Read Event Counter</b> and <b>Read Ceiling</b> commands to read
    * the status of all counters.
-   *
-   * <p>Once this command is processed, the result is available in {@link LegacySam}.
    *
    * @return The current instance.
    * @since 0.2.0

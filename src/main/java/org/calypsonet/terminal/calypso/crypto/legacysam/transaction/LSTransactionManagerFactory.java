@@ -52,7 +52,7 @@ public interface LSTransactionManagerFactory {
    * Creates an instance of {@link LSAsyncTransactionExecutorManager}.
    *
    * @param samReader The reader to use to communicate with the SAM.
-   * @param sam The target SAM image.
+   * @param sam The SAM image.
    * @param samCommands A string containing the prepared commands.
    * @return A new instance of {@link LSAsyncTransactionExecutorManager}.
    * @throws IllegalArgumentException If an argument is null.
