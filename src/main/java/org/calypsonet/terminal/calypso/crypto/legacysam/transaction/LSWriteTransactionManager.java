@@ -45,7 +45,7 @@ public interface LSWriteTransactionManager<T extends LSWriteTransactionManager<T
    * <p>Note: as this command generates the writing of a full record corresponding to 9 counters, it
    * is necessary either to have read the status of the counters beforehand, or to have called this
    * method for each of the 8 other counters of the same record. Otherwise, an exception will be
-   * raised when executing the {@link #processCommands()} method.
+   * raised when processing the command.
    *
    * <p>Warning: in the case of an asynchronous transaction the content of the {@link LegacySam}
    * object will not be updated.
