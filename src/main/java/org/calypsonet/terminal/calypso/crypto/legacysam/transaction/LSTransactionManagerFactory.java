@@ -31,4 +31,36 @@ public interface LSTransactionManagerFactory {
    * @since 0.1.0
    */
   LSFreeTransactionManager createFreeTransactionManager(CardReader samReader, LegacySam sam);
+
+  /**
+   * Creates an instance of {@link LSAsyncTransactionCreatorManager}.
+   *
+   * <p>The target SAM context can be retrieved with the method {@link
+   * LSFreeTransactionManager#exportTargetSamContextForAsyncTransaction()}.
+   *
+   * @param targetSamContext The target SAM context.
+   * @param securitySetting The security settings.
+   * @return A new instance of {@link LSAsyncTransactionCreatorManager}.
+   * @throws IllegalArgumentException If an argument is null.
+   * @see LSFreeTransactionManager#exportTargetSamContextForAsyncTransaction()
+   * @since 0.2.0
+   */
+  LSAsyncTransactionCreatorManager createAsyncTransactionCreatorManager(
+      String targetSamContext, LSSecuritySetting securitySetting);
+
+  /**
+   * Creates an instance of {@link LSAsyncTransactionExecutorManager}.
+   *
+   * <p>The SAM commands must be prepared using a {@link LSAsyncTransactionCreatorManager}.
+   *
+   * @param samReader The reader to use to communicate with the SAM.
+   * @param sam The SAM image.
+   * @param samCommands A string containing the prepared commands.
+   * @return A new instance of {@link LSAsyncTransactionExecutorManager}.
+   * @throws IllegalArgumentException If an argument is null.
+   * @see LSAsyncTransactionCreatorManager
+   * @since 0.2.0
+   */
+  LSAsyncTransactionExecutorManager createAsyncTransactionExecutorManager(
+      CardReader samReader, LegacySam sam, String samCommands);
 }

@@ -16,6 +16,9 @@ package org.calypsonet.terminal.calypso.crypto.legacysam.transaction;
  * LSFreeTransactionManager#prepareComputeSignature(CommonSignatureComputationData)} method for
  * basic signature computation using the "Data Cipher" SAM command.
  *
+ * <p>Use method {@link LSCommandDataFactory#createBasicSignatureComputationData()} to create an
+ * instance of this object.
+ *
  * @since 0.1.0
  */
 public interface BasicSignatureComputationData

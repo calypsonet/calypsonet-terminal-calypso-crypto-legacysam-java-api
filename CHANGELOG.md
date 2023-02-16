@@ -5,6 +5,26 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- `SystemKeyType` API.
+- `KeyParameter` API.
+- `LSSecuritySetting` API.
+- `LSWriteTransactionManager` API.
+- `LSAsyncTransactionCreatorManager` API.
+- `LSAsyncTransactionExecutorManager` API.
+- `LSSecuritySettingFactory` API.
+- `LegacySam.getSystemKeyParameter` method.
+- `LegacySam.isManualCounterIncrementAuthorized` method.
+- `LSTransactionManagerFactory.createAsyncTransactionCreatorManager` method.
+- `LSTransactionManagerFactory.createAsyncTransactionExecutorManager` method.
+- `LSFreeTransactionManager.exportTargetSamContextForAsyncTransaction` method.
+- `LSReadTransactionManager.prepareReadSystemKeyParameters` method.
+- `LSReadTransactionManager.prepareReadCounterStatus` method.
+- `LSReadTransactionManager.prepareReadAllCountersStatus` method.
+- `LSWriteTransactionManager.prepareWriteCounterCeiling` method.
+- `LSWriteTransactionManager.prepareWriteCounterConfiguration` method.
+### Upgraded
+- "Calypsonet Terminal Reader API" to version `1.2.0`.
 
 ## [0.1.0] - 2022-12-12
 ### Added
