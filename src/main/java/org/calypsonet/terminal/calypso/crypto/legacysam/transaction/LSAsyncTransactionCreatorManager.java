@@ -15,9 +15,9 @@ import org.calypsonet.terminal.calypso.crypto.legacysam.sam.LegacySam;
 import org.calypsonet.terminal.reader.CardReader;
 
 /**
- * Transaction manager dedicated to operations performed asynchronously. Commands are prepared using
- * a control SAM, and the result is available as a string to be imported and executed by the method
- * {@link LSAsyncTransactionExecutorManager#processCommands()}, then executed.
+ * Transaction manager dedicated to operations performed asynchronously. This manager prepares
+ * commands using a control SAM, and the result is available as a string to be imported and executed
+ * by the method {@link LSAsyncTransactionExecutorManager#processCommands()}, then executed.
  *
  * <p>Use the {@link LSTransactionManagerFactory#createFreeTransactionManager(CardReader,
  * LegacySam)} method to create an instance of this interface.
