@@ -33,11 +33,11 @@ public interface LSAsyncTransactionCreatorManager
   /**
    * Returns a string containing the prepared commands to be executed by a target SAM.
    *
-   * <p>These commands can later be executed after import using the method {@link
-   * LSAsyncTransactionExecutorManager#processCommands()}.
+   * <p>These commands can later be imported and processed by a {@link
+   * LSAsyncTransactionExecutorManager}.
    *
    * @return A not empty string.
-   * @see LSAsyncTransactionExecutorManager#processCommands()
+   * @see LSAsyncTransactionExecutorManager
    * @since 0.2.0
    */
   String exportCommands();
